@@ -70,9 +70,8 @@
 									type="number"
 									id="metric_height"
 									placeholder="0"
-									value="0"
 								/>
-								<span class="placeholder">CM</span>
+								<span class="placeholder">cm</span>
 							</div>
 							<div class="metric__weight__wrap">
 								<label for="metric_weight">Weight</label>
@@ -80,9 +79,8 @@
 									type="number"
 									id="metric_weight"
 									placeholder="0"
-									value="0"
 								/>
-								<span class="placeholder">KG</span>
+								<span class="placeholder">kg</span>
 							</div>
 						</div>
 						<div class="imperial__wrap hide">
@@ -92,7 +90,6 @@
 									type="number"
 									id="imperial_height_feet"
 									placeholder="0"
-									value="0"
 								/><span
 									class="placeholder first__input__placeholder"
 									>ft</span
@@ -102,7 +99,6 @@
 									type="number"
 									id="imperial_height_inches"
 									placeholder="0"
-									value="0"
 								/>
 								<span class="placeholder">in</span>
 							</div>
@@ -111,20 +107,8 @@
 							<div class="imperial__weight__wrap">
 								<input
 									type="number"
-									id="imperial_weight_stone"
-									placeholder="0"
-									value="0"
-								/>
-								<span
-									class="placeholder first__input__placeholder"
-									>st</span
-								>
-
-								<input
-									type="number"
 									id="imperial_weight_pounds"
 									placeholder="0"
-									value="0"
 								/>
 								<span class="placeholder">lbs</span>
 							</div>
@@ -138,14 +122,19 @@
 							result here
 						</p>
 					</div>
-					<div class="bmi__results__wrap results_active">
-						<p>Your BMI is...</p>
-						<span id="bmi__result"></span>
+					<div class="bmi__results__wrap results_active hide">
+						<div class="bmi__results__number">
+							<p style="margin-bottom: 5px">Your BMI is...</p>
+							<span id="bmi__result">0.0</span>
+						</div>
 
 						<p class="bmi__results__description">
-							Your BMI suggests you're a healthy weight. Your
+							Your BMI suggests you're
+							<span id="bmi__category">healthy weight</span>. Your
 							ideal weight is between
-							<strong>63.3kgs - 85.2kgs</strong>
+							<span id="bmi__range"
+								><strong>63.3kgs - 85.2kgs</strong></span
+							>
 						</p>
 					</div>
 				</form>
