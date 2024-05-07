@@ -63,59 +63,71 @@
 					</div>
 
 					<div class="bmi__input__wrap">
-						<div class="metric__height__wrap">
-							<label for="metric_height">Height</label>
-							<input
-								type="number"
-								id="metric_height"
-								placeholder="0"
-								value="0"
-							/>
-							<span class="placeholder">CM</span>
+						<div class="metric__wrap">
+							<div class="metric__height__wrap">
+								<label for="metric_height">Height</label>
+								<input
+									type="number"
+									id="metric_height"
+									placeholder="0"
+									value="0"
+								/>
+								<span class="placeholder">CM</span>
+							</div>
+							<div class="metric__weight__wrap">
+								<label for="metric_weight">Weight</label>
+								<input
+									type="number"
+									id="metric_weight"
+									placeholder="0"
+									value="0"
+								/>
+								<span class="placeholder">KG</span>
+							</div>
 						</div>
-						<div>
-							<label for="metric_weight">Weight</label>
-							<input
-								type="number"
-								id="metric_weight"
-								placeholder="0"
-								value="0"
-							/>
-						</div>
-						<div class="imperial__height__wrap">
+						<div class="imperial__wrap hide">
 							<label for="imperial_height_feet">Height</label>
-							<input
-								type="number"
-								id="imperial_height_feet"
-								placeholder="0"
-								value="0"
-							/>
+							<div class="imperial__height__wrap">
+								<input
+									type="number"
+									id="imperial_height_feet"
+									placeholder="0"
+									value="0"
+								/><span
+									class="placeholder first__input__placeholder"
+									>ft</span
+								>
 
-							<label for="imperial_height_inches">Height</label>
-							<input
-								type="number"
-								id="imperial_height_inches"
-								placeholder="0"
-								value="0"
-							/>
-						</div>
+								<input
+									type="number"
+									id="imperial_height_inches"
+									placeholder="0"
+									value="0"
+								/>
+								<span class="placeholder">in</span>
+							</div>
 
-						<div class="imperial__weight__wrap">
 							<label for="imperial_weight_stone">Weight</label>
-							<input
-								type="number"
-								id="imperial_weight_stone"
-								placeholder="0"
-								value="0"
-							/>
+							<div class="imperial__weight__wrap">
+								<input
+									type="number"
+									id="imperial_weight_stone"
+									placeholder="0"
+									value="0"
+								/>
+								<span
+									class="placeholder first__input__placeholder"
+									>st</span
+								>
 
-							<label for="imperial_weight_pounds">Weight</label>
-							<input
-								type="number"
-								id="imperial_weight_pounds"
-								placeholder="0"
-								value="0"
-							/>
+								<input
+									type="number"
+									id="imperial_weight_pounds"
+									placeholder="0"
+									value="0"
+								/>
+								<span class="placeholder">lbs</span>
+							</div>
 						</div>
 					</div>
 

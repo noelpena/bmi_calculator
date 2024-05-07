@@ -1,6 +1,7 @@
 const UISelectors = {
 	measurementType: "input[name=measurement_type]",
 	selectedMeasurementType: "input[name=measurement_type]:checked",
+	notSelectedMeasurementType: "input[name=measurement_type]:not-checked",
 	metricHeight: "#metric_height",
 	metricWeight: "#metric_weight",
 	imperialHeightFeet: "#imperial_height_feet",
@@ -8,7 +9,27 @@ const UISelectors = {
 	imperialWeightStone: "#imperial_weight_stone",
 	imperialWeightPounds: "#imperial_weight_pounds",
 	bmiResult: "#bmi__result",
+
+	bmiInputWrap: ".bmi__input__wrap",
+
+	metricWrap: ".metric__wrap",
+	imperialWrap: ".imperial__wrap",
+
+	metricHeightWrap: ".metric__height__wrap",
+	metricWeightWrap: ".metric__weight__wrap",
+	imperialHeightWrap: ".imperial__height__wrap",
+	imperialWeightWrap: ".imperial__weight__wrap",
 };
+
+// document
+// 	.querySelector("input[name=measurement_type]:not-checked")
+// 	.addEventListener("click", function (e) {
+// 		console.log(e);
+// 	});
+
+function switch2Imperial() {
+	UISelectors.selectedMeasurementType.value = "imperial";
+}
 
 function calculateBMI() {
 	// check to make sure it's not zero or null
@@ -52,9 +73,25 @@ function calculateBMI_imperial() {
 
 	document.querySelector(UISelectors.bmiResult).innerHTML = bmi.toFixed(2);
 }
+const radioButtons = document.querySelectorAll(
+	'input[name="measurement_type"]'
+);
+radioButtons.forEach((button) => {
+	button.addEventListener("change", (e) => {
+		console.log(e);
+		const imperialWrap = document.querySelector(UISelectors.imperialWrap);
+		const metricWrap = document.querySelector(UISelectors.metricWrap);
+		console.dir(metricWrap, imperialWrap);
+		const bmiInputWrap = document.querySelector(UISelectors.bmiInputWrap);
 
-// document
-// 	.querySelector(UISelectors.measurementType)
-// 	.addEventListener("change", function (e) {
-// 		console.log(this);
-// 	});
+		if (e.target.id === "metric") {
+			metricWrap.classList.remove("hide");
+			imperialWrap.classList.add("hide");
+			bmiInputWrap.classList.remove("wrap");
+		} else {
+			metricWrap.classList.add("hide");
+			imperialWrap.classList.remove("hide");
+			bmiInputWrap.classList.add("wrap");
+		}
+	});
+});
