@@ -248,7 +248,7 @@ input[type="radio"] {
 	gap: 10px;
 }
 
-.imperial__wrap label[for="imperial_weight_stone"] {
+.imperial__wrap label[for="imperial_weight_pounds"] {
 	margin-top: 10px;
 }
 
