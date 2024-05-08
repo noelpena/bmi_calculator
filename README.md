@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](hhttps://www.frontendmentor.io/solutions/css-grid-solution-for-bmi-calculator-NBLp5VHmDn)
+-   Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/css-grid-solution-for-bmi-calculator-NBLp5VHmDn)
 -   Live Site URL: [Add live site URL here](https://fm-bmi-calculator-two.vercel.app/)
 
 ### Built with
