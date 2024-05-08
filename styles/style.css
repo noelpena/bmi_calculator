@@ -46,6 +46,11 @@ h1 {
 	color: var(--gunmetal);
 }
 
+.bold-heading {
+	letter-spacing: -1px;
+	margin: 10px auto;
+}
+
 .wrap {
 	flex-wrap: wrap;
 }
@@ -106,9 +111,15 @@ main {
 }
 
 .main__hero {
+	grid-column: span 12;
+	display: grid;
+	grid-template-columns: repeat(
+		12,
+		calc((var(--MaxWidth) - 11 * var(--gridGap)) / 12)
+	);
+	grid-gap: var(--gridGap);
 	position: relative;
 	z-index: 5;
-	/* margin-bottom: 100px; */
 	grid-column: span 12;
 }
 
@@ -130,7 +141,7 @@ main {
 	background-color: #fff;
 	box-shadow: 0px 0px 20px var(--borderColor);
 }
-.main__calculator h4 {
+.main__calculator .bold-heading {
 	font-weight: 600;
 	font-size: var(--headingS);
 	color: var(--gunmetal);
@@ -379,7 +390,7 @@ input[type="radio"] {
 	grid-column-end: 13;
 }
 
-.box__benefits h3 {
+.box__benefits .bold-heading {
 	color: var(--gunmetal);
 	font-size: 20px;
 	font-weight: 600;
@@ -418,7 +429,7 @@ input[type="radio"] {
 	gap: 10px;
 }
 
-.limit__heading h4 {
+.limit__heading .bold-heading {
 	font-size: 18px;
 	color: var(--gunmetal);
 	font-weight: 600;
