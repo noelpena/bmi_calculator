@@ -14,6 +14,10 @@ Users should be able to:
 -   View the optimal layout for the interface depending on their device's screen size
 -   See hover and focus states for all interactive elements on the page
 
+### Screenshot
+
+![Screenshot of BMI calculator page](./ScreenshotBMICalculator.png)
+
 ### Links
 
 -   Solution URL: [Add solution URL here](hhttps://www.frontendmentor.io/solutions/css-grid-solution-for-bmi-calculator-NBLp5VHmDn)
@@ -22,6 +26,5 @@ Users should be able to:
 ### Built with
 
 -   Semantic HTML5 markup
--   CSS
--   Flexbox
--   CSS Grid
+-   CSS (Flexbox & CSS Grid)
+-   Vanilla JS
