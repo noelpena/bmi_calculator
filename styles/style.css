@@ -260,7 +260,7 @@ input[type="radio"] {
 	border-radius: 100px 999px 999px 100px;
 	margin: 20px auto 0px;
 }
-.bmi__results__wrap.results_inactive h4 {
+.bmi__results__wrap.results_inactive .bold-heading {
 	color: #fff;
 	font-size: var(--headingS);
 	font-weight: 600;
