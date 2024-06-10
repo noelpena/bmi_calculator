@@ -1,10 +1,8 @@
-# Frontend Mentor - Body Mass Index Calculator solution
+# Body Mass Index Calculator
 
-This is a solution to the [Body Mass Index Calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+<a href="https://fm-bmi-calculator-two.vercel.app/" target="_blank">BMI Calculator Live Site</a>
 
 ## Overview
-
-### The challenge
 
 Users should be able to:
 
@@ -14,17 +12,13 @@ Users should be able to:
 -   View the optimal layout for the interface depending on their device's screen size
 -   See hover and focus states for all interactive elements on the page
 
-### Screenshot
-
-![Screenshot of BMI calculator page](./ScreenshotBMICalculator.png)
-
-### Links
-
--   Solution URL: [Add solution URL here](hhttps://www.frontendmentor.io/solutions/css-grid-solution-for-bmi-calculator-NBLp5VHmDn)
--   Live Site URL: [Add live site URL here](https://fm-bmi-calculator-two.vercel.app/)
-
 ### Built with
 
 -   Semantic HTML5 markup
 -   CSS (Flexbox & CSS Grid)
 -   Vanilla JS
+
+### Screenshot
+![Screenshot of BMI calculator page](./ScreenshotBMICalculator.png)
+
+This is a [solution](https://www.frontendmentor.io/solutions/css-grid-solution-for-bmi-calculator-NBLp5VHmDn) to the [Body Mass Index Calculator challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/body-mass-index-calculator-brrBkfSz1T).
